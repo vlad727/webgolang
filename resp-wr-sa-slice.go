@@ -51,4 +51,8 @@ func GetSa(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 	w.Write(data)
+        // bytes and string
+	w.Write([]byte("hello"))
+	fmt.Fprintln(w, "hello")
+	
 }
