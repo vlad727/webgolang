@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/35934298/how-to-redirect-to-a-url
+example:
+Issue:
+Get post request parse it and then need to redirect to another page
+Resolution:
+http.Redirect(w, r, "/crbshow", http.StatusSeeOther) 
+### it will open new page for user after he input his data
